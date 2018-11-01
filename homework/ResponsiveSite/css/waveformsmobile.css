@@ -1,0 +1,45 @@
+@import "waveformsdesktop.css";
+
+#descriptions{
+  font-family: 'Heebo', sans-serif;
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 1%;
+  text-align: center;
+}
+
+
+#pictures{
+  font-family: 'Heebo', sans-serif;
+  display: block;
+  margin-top: 10px;
+  margin-left: 70%;
+  margin-right: 40%;
+  text-align: center;
+}
+
+#paragraph{
+  font-family: 'Heebo', sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+#sineandotherwaveforms{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#squareandotherwaveforms{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#sawandotherwaveforms{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+@import "frontpagedesktop.css";
+
+#frontpgwaveformgrid{
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            }
+              #sinecol{
+              grid-area: sinecol;
+              background-color: white;
+              height: 1fr;
+              }
+              #squarecol{
+              grid-area: squarecol;
+              background-color: white;
+              height: 1fr;
+              }
+              #sawcol{
+              grid-area: sawcol;
+              background-color: white;
+              height: 1fr;
+              }

@@ -1,0 +1,74 @@
+@import
+url('https://fonts.googleapis.com/css?family=Heebo');
+
+#h1{
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#h4{
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    color: grey;
+}
+
+.bodytext{
+
+}
+
+.images{
+height: 120px;
+display: block;
+margin: 10px auto;
+}
+
+#description{
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 400px;
+    background-color: white;
+
+}
+
+#waveformtitles{
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+          #frontpgwaveformgrid{
+            display: grid;
+            grid-template-areas: "sinecol squarecol sawcol";
+            grid-template-rows: 200px;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            margin-top: 10px;
+            text-align: center;
+            }
+              #sinecol{
+              grid-area: sinecol;
+              background-color: white;
+              height: 1fr;
+              }
+              #squarecol{
+              grid-area: squarecol;
+              background-color: white;
+              height: 1fr;
+              }
+              #sawcol{
+              grid-area: sawcol;
+              background-color: white;
+              height: 1fr;
+              }
+
+
+a:link {
+text-decoration: none;
+color: black
+}
+
+a:hover {
+  color: #00E5B1;
+}

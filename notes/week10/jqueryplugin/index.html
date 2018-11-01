@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>jquery plugins</title>
+
+    <style>
+      .char1{
+        color: red;
+      }
+
+      .char2{
+        color: orange;
+      }
+
+      .char3{
+        color: green;
+      }
+
+      .char4{
+        color: blue;
+      }
+
+      .char5{
+        color: purple;
+      }
+
+      .word3{
+        font-size: 50px;
+      }
+
+      .line2{
+        color: orange;
+        font-family: sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+
+  <head>
+    <body>
+      <h1 id="letters">Hello</h1>
+      <p id="words">Breaking up words</p>
+      <p id="sentences">Breaking <br> up the <br> sentences</p>
+      <a data-fancybox="gallery" href="https://farm1.staticflickr.com/8444/7754586798_785f2d13fe_o.jpg"><img src="https://farm1.staticflickr.com/8444/7754586798_785f2d13fe_o.jpg"></a>
+      <a data-fancybox="gallery" href="https://farm1.staticflickr.com/8444/7754586798_785f2d13fe_o.jpg"><img src="https://farm1.staticflickr.com/8444/7754586798_785f2d13fe_o.jpg"></a>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script src="js/jquery.lettering.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $("#letters").lettering();
+          $("#words").lettering("words");
+          $("#sentences").lettering("lines");
+
+        });
+      </script>
+
+    </body>
+
+
+</html>

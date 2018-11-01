@@ -1,0 +1,120 @@
+@import
+url('https://fonts.googleapis.com/css?family=Heebo');
+
+#h2{
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+.images{
+height: 120px;
+display: block;
+margin: 10px auto;
+}
+
+#waveformtitles{
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#descriptions{
+  font-family: 'Heebo', sans-serif;
+  text-align: left;
+  display: grid;
+  grid-template-areas: "paragraph picture";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  margin-top: 10px;
+  margin-left: 1%;
+  text-align: center;
+}
+
+
+#pictures{
+  font-family: 'Heebo', sans-serif;
+  display: block;
+  margin-top: 10px;
+  margin-left: 70%;
+  margin-right: 40%;
+  text-align: center;
+}
+
+
+
+
+
+#sineandotherwaveforms{
+    display: grid;
+    grid-template-areas: "squarecolsine sawcolsine";
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+    #squarecolsine{
+      grid-area: squarecolsine;
+      background-color: white;
+      height: 500px;
+      text-align: center;
+      }
+    #sawcolsine{
+      grid-area: sawcolsine;
+      background-color: white;
+      height: 500px;
+      text-align: center;
+      }
+#squareandotherwaveforms{
+    display: grid;
+    grid-template-areas: "sawcolsquare sinecolsquare";
+    grid-template-rows: 200px;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+      #sawcolsquare{
+        grid-area: sawcolsquare;
+        background-color: white;
+        height: 500px;
+        }
+      #sinecolsquare{
+        grid-area: sinecolsquare;
+        background-color: white;
+        height: 500px;
+        }
+
+#sawandotherwaveforms{
+    display: grid;
+    grid-template-areas: "sinecolsaw squarecolsaw";
+    grid-template-rows: 200px;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+    #sinecolsaw{
+        grid-area: sinecolsaw;
+        background-color: white;
+        height: 500px;
+        }
+    #squarecolsaw{
+        grid-area: squarecolsaw;
+        background-color: white;
+        height: 500px;
+        }
+
+a:link {
+    text-decoration: none;
+    color: black
+    }
+
+a:hover {
+      color: #00E5B1;
+    }
+#coloredbr{
+  background-color: black;
+  height: 5px;
+  margin-bottom: 5px;
+
+}

@@ -1,0 +1,61 @@
+@import
+url('https://fonts.googleapis.com/css?family=Roboto|Tangerine');
+
+
+body{
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+
+}
+h1{
+  color: #ffffff;
+
+}
+
+
+p{
+  line-height: 40px;
+  text-indent: 10px;
+  color: grey;
+}
+
+ul li{
+  list-style: circle;
+}
+
+#box{
+  background-color: lime;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: medium dashed black;
+}
+
+#box2{
+  background-color: white;
+  width: auto;
+  height: auto;
+  border: medium dashed blue;
+}
+
+#name{
+  text-align: center;
+  background-color: black;
+  font-family: 'Tangerine', sans-serif;
+  font-stretch: ultra-expanded;
+
+}
+
+#introduction{
+  text-align: center;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00E5B1;
+
+}
