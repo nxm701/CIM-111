@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How to Make a Paper Airplane</title>
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto|Satisfy" rel="stylesheet">
+  <style>
+
+    /* font-family: 'Satisfy', sans-serif; */
+
+
+
+    h1{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: white;
+    }
+
+    h2{
+    width:300px;
+    height:200px;
+    }
+    h3:hover{
+      color: #f5f4f5;
+    }
+
+
+    h3{
+    font-family: 'Roboto', cursive; */
+    font-weight: 400;
+    }
+
+    #titlebox{
+      background-color: black;
+      height: 50px;
+      width: 800px;
+      margin-left: 27%;
+      margin-right: 15%;
+    }
+    .images{
+      -webkit-transform: scaleX(-1);
+      transform: scaleY(-1);
+    }
+
+
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-box {
+      background-color: transparent;
+      width: 800px;
+      height: 700px;
+      border: 5px solid black;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-box-front {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    /* Style the back side */
+    .flip-box-back {
+      background-color: black;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+
+  </style>
+
+
+
+<head>
+
+<body>
+<div id="titlebox">
+<h1>H&nbsp;o&nbsp;w &nbsp; t&nbsp;o &nbsp; M&nbsp;a&nbsp;k&nbsp;e &nbsp; a &nbsp;  P&nbsp;a&nbsp;p&nbsp;e&nbsp;r &nbsp;  A&nbsp;i&nbsp;r&nbsp;p&nbsp;l&nbsp;a&nbsp;n&nbsp;e</h1>
+
+
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2 style=>Step 1</h2>
+    </div>
+    <div class="flip-box-back">
+      <h3 id="step1">Step 1</h3>
+        <p>Fold a piece of paper "hot dog" style.</p>
+        <div id="steprecepticle1"></div>
+    </div>
+  </div>
+</div>
+<h3 id="step1">Step 1</h3>
+  <p>Fold a piece of paper "hot dog" style.</p>
+  <div id="steprecepticle1"></div>
+
+<h3 id="step2">Step 2</h3>
+  <p>Fold the top corners downward to meet in the middle of the paper.</p>
+  <div id="steprecepticle2"></div>
+
+<h3 id="step3">Step 3</h3>
+  <p>Fold the top down to resemble an envelope. Leave a little bit of room at the bottom, about a half inch.</p>
+  <div id="steprecepticle3"></div>
+
+<h3 id="step4">Step 4</h3>
+  <p>Fold the top corners in again so they meet at the middle. There should be a small triangle beneath the folds.</p>
+  <div id="steprecepticle4"></div>
+
+<h3 id="step5">Step 5</h3>
+  <p>"Seal the envelope" by folding the small triangle up.</p>
+  <div id="steprecepticle5"></div>
+
+<h3 id="step6">Step 6</h3>
+  <p>Fold the entire paper in half outwards. The small triangle should be visible on the bottom.</p>
+  <div id="steprecepticle6"></div>
+
+<h3 id="end">Step 7</h3>
+  <p>Finally, this is what it should look like! This type of paper airplane is relatively easy to make and can fly pretty far if done right.</p>
+  <div id="endrecepticle"></div>
+
+
+
+
+  <!--Local jquery script -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Remote Version -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      // All jquery code should be placed below
+      $("flip-box").mouseenter(function(){;
+        });
+      $("flip-box-inner")
+
+      $("#steprecepticle1").hide();
+      $("#steprecepticle2").hide();
+      $("#steprecepticle3").hide();
+      $("#steprecepticle4").hide();
+      $("#steprecepticle5").hide();
+      $("#steprecepticle6").hide();
+      $("#endrecepticle").hide();
+
+      $("#step1").click(function(){
+        $("#steprecepticle1").css("width",  "700px");
+        $("#steprecepticle1").css("height",  "600px");
+        $("#steprecepticle1").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/Step1.jpeg" width="700">').show(700)});
+
+      $("#step2").click(function(){
+        $("#steprecepticle2").css("width",  "700px");
+        $("#steprecepticle2").css("height",  "600px");
+        $("#steprecepticle2").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/Step2.jpeg" width="700">').show(700)});
+
+      $("#step3").click(function(){
+        $("#steprecepticle3").css("width",  "700px")
+        $("#steprecepticle3").css("height",  "600px")
+        $("#steprecepticle3").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/Step3.jpeg" width="700">').show(700)});
+
+      $("#step4").click(function(){
+        $("#steprecepticle4").css("width",  "700px")
+        $("#steprecepticle4").css("height",  "600px")
+        $("#steprecepticle4").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/Step4.jpeg" width="700">').show(700)});
+
+      $("#step5").click(function(){
+        $("#steprecepticle5").css("width",  "700px")
+        $("#steprecepticle5").css("height",  "600px")
+        $("#steprecepticle5").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/Step5.jpeg" width="700">').show(700)});
+
+      $("#step6").click(function(){
+        $("#steprecepticle6").css("width",  "700px")
+        $("#steprecepticle6").css("height",  "600px")
+        $("#steprecepticle6").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/Step6.jpeg" width="700">').show(700)});
+
+      $("#end").click(function(){
+        $("#endrecepticle").css("width",  "700px")
+        $("#endrecepticle").css("height",  "600px")
+        $("#endrecepticle").html('<img class="images" src="/Users/Nihar/Documents/College/Sophomore Year/CIM-111/homework/jqueryassignment1/images/End.jpeg" width="700">').show(700)});
+
+
+    });// End of document ready
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <a href="/CIM-111/homework/index.html">Assignments</a>
+</footer>
+</html>
