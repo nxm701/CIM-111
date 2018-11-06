@@ -20,6 +20,7 @@
     height:600px;
     justify-content: center;
     }
+
     h3:hover{
       color: #00fffa;
     }
@@ -28,6 +29,11 @@
     h3{
     font-family: 'Roboto', cursive;
     font-weight: 400;
+    justify-content: center;
+    }
+
+    p{
+      font-family: 'Roboto', cursive;
     }
 
     #titlebox{
@@ -42,52 +48,9 @@
       transform: scaleY(-1);
     }
 
-
-    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-    .flip-box {
-      background-color: transparent;
-      display: block;
-      margin-left: 27%;
-      width: 800px;
-      height: 700px;
-      border: 5px solid black;
-      perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    }
-
-    /* This container is needed to position the front and back side */
-    .flip-box-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
+    #stepsblock{
       text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
 
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-box:hover .flip-box-inner {
-      transform: rotateY(180deg);
-    }
-
-    /* Position the front and back side */
-    .flip-box-front, .flip-box-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-    }
-
-    /* Style the front side (fallback if image is missing) */
-    .flip-box-front {
-      background-color: #ffffff;
-      color: black;
-    }
-
-    /* Style the back side */
-    .flip-box-back {
-      background-color: black;
-      color: white;
-      transform: rotateY(180deg);
     }
 
 
@@ -104,35 +67,36 @@
 
 </div>
 
+<div id="stepsblock">
 
-<h3 id="step1">Step 1</h3>
+<h3 id="step1"><em>Step 1</em></h3>
   <p>Fold a piece of paper "hot dog" style.</p>
   <div id="steprecepticle1"></div>
-
-<h3 id="step2">Step 2</h3>
+<br>
+<h3 id="step2"><em>Step 2</em></h3>
   <p>Fold the top corners downward to meet in the middle of the paper.</p>
   <div id="steprecepticle2"></div>
-
-<h3 id="step3">Step 3</h3>
+<br>
+<h3 id="step3"><em>Step 3</em></h3>
   <p>Fold the top down to resemble an envelope. Leave a little bit of room at the bottom, about a half inch.</p>
   <div id="steprecepticle3"></div>
-
-<h3 id="step4">Step 4</h3>
+<br>
+<h3 id="step4"><em>Step 4</em></h3>
   <p>Fold the top corners in again so they meet at the middle. There should be a small triangle beneath the folds.</p>
   <div id="steprecepticle4"></div>
-
-<h3 id="step5">Step 5</h3>
+<br>
+<h3 id="step5"><em>Step 5</em></h3>
   <p>"Seal the envelope" by folding the small triangle up.</p>
   <div id="steprecepticle5"></div>
-
-<h3 id="step6">Step 6</h3>
+<br>
+<h3 id="step6"><em>Step 6</em></h3>
   <p>Fold the entire paper in half outwards. The small triangle should be visible on the bottom.</p>
   <div id="steprecepticle6"></div>
-
+<br>
 <h3 id="end">Step 7</h3>
   <p>Finally, this is what it should look like! This type of paper airplane is relatively easy to make and can fly pretty far if done right.</p>
   <div id="endrecepticle"></div>
-
+</div>
 
 
 
