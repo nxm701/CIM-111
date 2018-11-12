@@ -2,80 +2,199 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!--Jquery plugin sources -->
-<link rel="import" href="tiltedpage_scroll-master/demo/tiltedpage-scroll.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/jquery.tiltedpage-scroll.js"></script>
-
-<script>
-	  $(document).ready(function(){
-      $(".main").tiltedpage_scroll({
-        angle: 20
-      });
-		});
-</script>
-<!---->
-<link rel="stylesheet" href="jqueryplugin/style.css">
+<link href="https://fonts.googleapis.com/css?family=KoHo|Roboto+Condensed" rel="stylesheet">
 
   <title>Vacation Folder</title>
 
+
 <style>
 
+html{
+  height: 100%;
+
+}
+body{
+  background: #ffe5e5;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  height: 100%;
+}
+
+#title{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 70px;
+}
+.introduction{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+.main{
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 0 auto 350px;
+
+}
+.tps-section {
+  width: 100%;
+  height: 500px;
+  -webkit-perspective: 10em;
+  -moz-perspective: 10em;
+  -ms-perspective: 10em;
+  -o-perspective: 10em;
+  perspective: 10em;
+  -webkit-perspective-origin: center bottom;
+  -moz-perspective-origin: center bottom;
+  -ms-perspective-origin: center bottom;
+  -o-perspective-origin: center bottom;
+  perspective-origin: center bottom;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+.tps-wrapper {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.tps-section{
+  width: 100% !important;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+
+.main h2{
+  font-family: 'KoHo', sans-serif;
+  font-size: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  padding: 20%;
+
+}
+
+.introduction .tps-wrapper{
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.page1 .tps-wrapper{
+  background-image: url("https://farm6.staticflickr.com/3301/3585916393_79e91cb464_o.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.page2 .tps-wrapper{
+  background-image: url("homework/jqueryassignment2/images/fjord.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.page3 .tps-wrapper{
+  background-image: url("homework/jqueryassignment2/images/Longyearbyen_Gulbrandsen_1140px.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.page4 .tps-wrapper{
+  background-image: url("images/Kirkenes Snowhotel.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.page5 .tps-wrapper{
+  background-image: url("images/images/aurora-borealis-lofoten-norway-night.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.page6 .tps-wrapper{
+  background-image: url("images/images/trondheim.jpeg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100vh;
+
+}
 
 
 </style>
-
 </head>
 <body>
 
+<div class="main">
+  <section class="titlepage">
+    <h1 id="title">Norway&mdash;Points of Interest</h1>
+  </section>
+  <br>
+  <br>
+  <section class="introduction">
+    <p id="intro">Norway is a geographically diverse and historically amazing country located in Scandinavia. About half of the country lies in the arctic circle with a very rugged and mountainous landscape, with an endless amount of beautiful fjords and picturesque views. The arctic latitude also means that, if the conditions are right, the beautiful Aurora Borealis can also be witnessed.
+    <br>
+    <br>
+    The southern part of Norway, which is also the most populated, features the capital city of Oslo and other cities such as Bergen and Stavanger.</p>
+    <br>
+    Below are some points of interest in Norway.
+  </section>
   <section class="page1">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/visit-sydney-australia-95861" target="_blank">Travel to Sydney, Australia<br><small>Completed on 14 Feb 2014</small></a></h1>
-    </div>
+    <h2>The capital city of Oslo</h2>
   </section>
   <section class="page2">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/visit-uluru-ayers-rock-96722" target="_blank">Visit Uluru (Ayers Rock), Australia<br><small>Completed on 17 Feb 2014</small></a></h1>
-    </div>
+    <h2>A fjord located in the heart of northern Norway</h2>
   </section>
   <section class="page3">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/travel-to-zhangjiajie-avatar-s-mountains-china-85798" target="_blank">Travel to ZhangJiaJie (Avatar's Mountain) in China<br><small>Completed on 20 Jan 2014</small></a></h1>
-    </div>
+    <h2>Longyearbyen, an arctic settlement on the island of Svalbard, an island located about halfway between mainland Norway and the North Pole</h2>
   </section>
   <section class="page4">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/ride-a-camel-93541" target="_blank">Ride a Camel in the Australian Outback<br><small>Completed on 17 Feb 2014</small></a></h1>
-    </div>
+    <h2>The Kirkenes Snowhotel, a hotel made entirely out of ice located near the Finnish and Russian Border to the northeast</h2>
   </section>
   <section class="page5">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/visit-sydney-australia-95861" target="_blank">Travel to Sydney, Australia<br><small>Completed on 14 Feb 2014</small></a></h1>
-    </div>
+    <h2>The Aurora Borealis on display at Lofoten</h2>
   </section>
   <section class="page6">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/visit-uluru-ayers-rock-96722" target="_blank">Visit Uluru (Ayers Rock), Australia<br><small>Completed on 17 Feb 2014</small></a></h1>
-    </div>
-  </section>
-  <section class="page7">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/travel-to-zhangjiajie-avatar-s-mountains-china-85798" target="_blank">Travel to ZhangJiaJie (Avatar's Mountain) in China<br><small>Completed on 20 Jan 2014</small></a></h1>
-    </div>
-  </section>
-  <section class="page8">
-    <div class="page_container">
-      <h1><a href="http://www.bucketlistly.com/achievements/ride-a-camel-93541" target="_blank">Ride a Camel in the Australian Outback<br><small>Completed on 17 Feb 2014</small></a></h1>
-    </div>
+    <h2>Trondheim, Norway</h2>
   </section>
 </div>
 
-
-
-
-
-
-
+<script src="/CIM-111/homework/jqueryassignment2/js/jquery-3.3.1.min.js"></script>
+<script src="/CIM-111/homework/jqueryassignment2/js/jquery.tiltedpage-scroll.js"></script>
+<script>
+    $(document).ready(function(){
+      $(".main").tiltedpage_scroll({
+        angle: 20
+      });
+    });
+</script>
 
 
 </body>

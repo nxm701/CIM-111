@@ -1,0 +1,41 @@
+html{
+  height: 100%;
+
+}
+body{
+  background: #f1f1f1;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  height: 100%;
+
+}
+.main{
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 0 auto 350px;
+
+}
+
+.tps-section{
+  width: 100% !important;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+
+.main h1{
+  font-size: 54px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 100;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 20%;
+  
+}
