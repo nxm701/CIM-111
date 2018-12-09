@@ -3,6 +3,7 @@
 <head>
 <title>Nihar Mandapaty</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Nihar Mandapaty">
 <meta name="keywords" content="Music, Producer, Nihar, Mandapaty, NUCLEUS">
 <meta name="description" content="Nihar Mandapaty's Portfolio Website">
@@ -21,6 +22,24 @@ a:hover{
   color: #32E2E1;
 }
 
+nav{
+  width: 550px;
+}
+
+
+nav ul li{
+  font-size: 20px;
+  font-family: 'Palanquin', sans-serif;
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+
+}
+nav ul li a{
+  text-decoration: none;
+
+}
+
 body{
 background-color: #000000;
 }
@@ -29,7 +48,7 @@ html{
 color: #ffffff;
 }
 
-}
+
 .tps-section {
   width: 100%;
   height: 500px;
@@ -71,6 +90,8 @@ color: #ffffff;
 
 .main h1{
   font-family: 'Archivo Black', sans-serif;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0 0 40px #00FFFB;
   font-size: 75px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -91,17 +112,24 @@ color: #ffffff;
   font-weight: 100;
   margin: 0;
   text-align: center;
-  padding: 5%;
+  padding: 2%;
 }
 
 #latestvideo{
-  margin-left: 33.3%;
+  margin-left: 25.5%;
+  margin-top: 4%;
+}
+
+.aboutsection{
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  width: 60%;
+  margin-left: 20%;
 
 }
 
-#aboutsection{
+.aboutsection p{
   text-align: center;
-  font-family: 'Palanquin', sans-serif;
 }
 
 #soundcloud{
@@ -109,40 +137,79 @@ color: #ffffff;
   margin-left: 30%;
   padding: 5%
 }
+
+
+.HOME .tps-wrapper{
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+
+.ABOUT .tps-wrapper{
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+
+.MUSIC .tps-wrapper{
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.CONTACT .tps-wrapper{
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+}
 </style>
-
-
 </head>
 
 <body>
+<header>
 
-
-
+</header>
+  <nav class="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 <div class="main">
-  <section class="HOME">
+  <section class="home">
     <h1 id="sectionheader">NIHAR MANDAPATY</h1>
-    <br>
-    <br>
-    <h3 id="subtitle">Songwriter and Music Producer</h3>
     <div id="latestvideo">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Gc_KUoMPkcw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/Gc_KUoMPkcw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div>
   </section>
-    <section class="ABOUT">
+    <section class="about">
       <h1 id="sectionheader">ABOUT</h1>
-      <p id="aboutsection">Nihar Mandapaty is a Miami-based Music Producer originally from Chicago who composes and produces electronic music under the name "NUCLEUS".
+      <div class="aboutsection">
+      <p>Nihar Mandapaty is a Miami-based Music Producer originally from Chicago who composes and produces electronic music. As a musician he puts genuineness above all else, telling his own personal stories through beautifully crafted melodies and massive sweeping synth textures, sometimes juxtaposed with raw, powerful basslines. His distinct style is compared with the likes of Porter Robinson, Crywolf, and Owl City.
       <br>
-      A Sophomore studying Media Writing and Production with a minor in Music Business, Mandapaty also currently holds an A&R position at 'Cane Records, the University of Miami's student-run record label.
       <br>
-      Mandapaty's mission as a student and an aspiring industry leader is to develop himself as a musician while also making meaningful and lasting connections within it. His goal is to drive positive change and secure the future of mu
+      Mandapaty's goal as an aspiring industry leader is to develop himself as a musician while also making meaningful and lasting connections and gaining experience in as many fields as he can. His ultimate mission is to help drive positive change and innovation in the music industry.
+      <br>
+      <br>
+      A Sophomore studying Media Writing and Production with a minor in Music Business, Mandapaty also currently holds an A&R position at 'Cane Records, the University of Miami's student-run award-winning record label. He has been producing music since 2014. Raised a classical musician, he has also played the trumpet for more than 9 years of his life and continues to play trumpet in college.
+      </div>
+
     </section>
-    <section class="MUSIC">
+    <section class="music">
       <h1 id="sectionheader">MUSIC</h1>
       <div id="soundcloud">
-      <iframe width="50%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/98085662&color=%2332e2e1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe width="50%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/98085662&color=%2332e2e1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
       </div>
     </section>
-    <section class="CONTACT">
+    <section class="contact">
       <h1 id="sectionheader">CONTACT</h1>
       <div id="email">
       <h3 id="businessinquiries">Business Inquries:
@@ -159,33 +226,34 @@ color: #ffffff;
 <script>
 $(document).ready(function(){
     $(".main").tiltedpage_scroll({
-          angle: 70
+          angle: 40
         });
       });
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+      // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "40") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+            // Store hash
+            var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
       });
-    } // End if
-  });
-});
 </script>
 
 </body>
