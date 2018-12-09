@@ -2,7 +2,114 @@
 <html>
 <head>
 
+<meta charset="utf-8">
+<meta name="author" content="Nihar Mandapaty">
+<meta name="keywords" content="Music, Producer, Nihar, Mandapaty, NUCLEUS">
+<meta name="description" content="Nihar Mandapaty's Portfolio Website">
+<meta NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+<meta NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+<meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Palanquin" rel="stylesheet">
+<style>
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color: #32E2E1;
+}
+
+body{
+background-color: #000000;
+}
+
+html{
+color: #ffffff;
+}
+
+}
+.tps-section {
+  width: 100%;
+  height: 500px;
+  -webkit-perspective: 10em;
+  -moz-perspective: 10em;
+  -ms-perspective: 10em;
+  -o-perspective: 10em;
+  perspective: 10em;
+  -webkit-perspective-origin: center bottom;
+  -moz-perspective-origin: center bottom;
+  -ms-perspective-origin: center bottom;
+  -o-perspective-origin: center bottom;
+  perspective-origin: center bottom;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+.tps-wrapper {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.tps-section{
+  width: 100% !important;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+
+.main h1{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 75px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  padding: 1%;
+
+}
+
+.main h3{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  padding: 5%;
+}
+
+#latestvideo{
+  margin-left: 33.3%;
+
+}
+
+#aboutsection{
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+}
+
+#soundcloud{
+  margin: 0 auto;
+  margin-left: 30%;
+  padding: 5%
+}
+</style>
 
 
 </head>
@@ -10,22 +117,83 @@
 <body>
 
 
+
+<div class="main">
+  <section class="HOME">
+    <h1 id="sectionheader">NIHAR MANDAPATY</h1>
+    <br>
+    <br>
+    <h3 id="subtitle">Songwriter and Music Producer</h3>
+    <div id="latestvideo">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Gc_KUoMPkcw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+  </section>
+    <section class="ABOUT">
+      <h1 id="sectionheader">ABOUT</h1>
+      <p id="aboutsection">Nihar Mandapaty is a Miami-based Music Producer originally from Chicago who composes and produces electronic music under the name "NUCLEUS".
+      <br>
+      A Sophomore studying Media Writing and Production with a minor in Music Business, Mandapaty also currently holds an A&R position at 'Cane Records, the University of Miami's student-run record label.
+      <br>
+      Mandapaty's mission as a student and an aspiring industry leader is to develop himself as a musician while also making meaningful and lasting connections within it. His goal is to drive positive change and secure the future of mu
+    </section>
+    <section class="MUSIC">
+      <h1 id="sectionheader">MUSIC</h1>
+      <div id="soundcloud">
+      <iframe width="50%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/98085662&color=%2332e2e1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      </div>
+    </section>
+    <section class="CONTACT">
+      <h1 id="sectionheader">CONTACT</h1>
+      <div id="email">
+      <h3 id="businessinquiries">Business Inquries:
+      <a href="mailto:nihar@mandapaty.com">nihar@mandapaty.com</a></h3>
+      </div>
+    </section>
+</div>
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.tiltedpage-scroll.js"></script>
+<script>
+$(document).ready(function(){
+    $(".main").tiltedpage_scroll({
+          angle: 70
+        });
+      });
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 </body>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/Users/Nihar/Documents/College/Sophomore Year/CMM 111/CIM 111 Atom Projects/homework/index.html">index.html</a>
+<footer>
+  <a href="/CIM-111/homework/index.html">Assignments</a>
+</footer>
 </html>
