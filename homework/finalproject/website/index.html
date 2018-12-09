@@ -17,10 +17,6 @@ html{
 color: #ffffff;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 
 a{
   text-decoration: none;
@@ -31,25 +27,27 @@ a:hover{
   color: #32E2E1;
 }
 
-nav{
-  width: 550px;
+
+
+.nav{
+  width: 50px;
+  height: 100%;
 }
 
 
-nav ul li{
+.nav ul li{
   font-size: 20px;
   font-family: 'Palanquin', sans-serif;
+  padding-top: 10px;
   list-style: none;
   display: inline-block;
   margin-right: 15px;
-
 }
-nav ul li a{
+.nav ul li a{
   text-decoration: none;
+  position fixed;
 
 }
-
-
 
 body{
 background-color: #000000;
@@ -147,6 +145,7 @@ background-color: #000000;
 }
 
 
+
 .HOME .tps-wrapper{
   -webkit-background-size: cover;
   background-size: cover;
@@ -156,6 +155,7 @@ background-color: #000000;
 
 
 .ABOUT .tps-wrapper{
+  margin-top: 3%;
   -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
@@ -164,6 +164,7 @@ background-color: #000000;
 
 
 .MUSIC .tps-wrapper{
+  margin-top: 3%;
   -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
@@ -171,6 +172,7 @@ background-color: #000000;
 }
 
 .CONTACT .tps-wrapper{
+  margin-top: 3%;
   -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
@@ -179,50 +181,53 @@ background-color: #000000;
 </style>
 </head>
 
-<body>
-<div id="nav">
-  <nav class="menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#music">Music</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</div>
-<div class="main">
-  <section class="home">
-    <h1 id="sectionheader">NIHAR MANDAPATY</h1>
-    <div id="latestvideo">
-      <iframe width="800" height="450" src="https://www.youtube.com/embed/Gc_KUoMPkcw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div>
-  </section>
-    <section class="about">
-      <h1 id="sectionheader">ABOUT</h1>
-      <div class="aboutsection">
-      <p>Nihar Mandapaty is a Miami-based Music Producer originally from Chicago who composes and produces electronic music. As a musician he puts genuineness above all else, telling his own personal stories through beautifully crafted melodies and massive sweeping synth textures, sometimes juxtaposed with raw, powerful basslines. His distinct style is compared with the likes of Porter Robinson, Crywolf, and Owl City.
-      <br>
-      <br>
-      Mandapaty's goal as an aspiring industry leader is to develop himself as a musician while also making meaningful and lasting connections and gaining experience in as many fields as he can. His ultimate mission is to help drive positive change and innovation in the music industry.
-      <br>
-      <br>
-      A Sophomore studying Media Writing and Production with a minor in Music Business, Mandapaty also currently holds an A&R position at 'Cane Records, the University of Miami's student-run award-winning record label. He has been producing music since 2014. Raised a classical musician, he has also played the trumpet for more than 9 years of his life and continues to play trumpet in college.
-      </div>
+<header>
+  <div class="navcontainer">
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    </section>
-    <section class="music">
-      <h1 id="sectionheader">MUSIC</h1>
-      <div id="soundcloud">
-      <iframe width="50%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/98085662&color=%2332e2e1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<body>
+<div class="main">
+    <section class="HOME" id="home">
+      <h1 id="sectionheader">NIHAR MANDAPATY</h1>
+      <div id="latestvideo">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/Gc_KUoMPkcw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
-    <section class="contact">
-      <h1 id="sectionheader">CONTACT</h1>
-      <div id="email">
-      <h3 id="businessinquiries">Business Inquries:
-      <a href="mailto:nihar@mandapaty.com">nihar@mandapaty.com</a></h3>
-      </div>
-    </section>
+      <section class="ABOUT" id="about">
+        <h1 id="sectionheader">ABOUT</h1>
+        <div class="aboutsection">
+        <p>Nihar Mandapaty is a Miami-based Music Producer originally from Chicago who composes and produces electronic music. As a musician he puts genuineness above all else, telling his own personal stories through beautifully crafted melodies and massive sweeping synth textures, sometimes juxtaposed with raw, powerful basslines. His distinct style is compared with the likes of Porter Robinson, Crywolf, and Owl City.
+        <br>
+        <br>
+        Mandapaty's goal as an aspiring industry leader is to develop himself as a musician while also making meaningful and lasting connections and gaining experience in as many fields as he can. His ultimate mission is to help drive positive change and innovation in the music industry.
+        <br>
+        <br>
+        A Sophomore studying Media Writing and Production with a minor in Music Business, Mandapaty also currently holds an A&R position at 'Cane Records, the University of Miami's student-run award-winning record label. He has been producing music since 2014. Raised a classical musician, he has also played the trumpet for more than 9 years of his life and continues to play trumpet in college.
+        </div>
+
+      </section>
+      <section class="MUSIC" id="music">
+        <h1 id="sectionheader">MUSIC</h1>
+        <div id="soundcloud">
+        <iframe width="50%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/98085662&color=%2332e2e1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+      </section>
+      <section class="CONTACT" id="contact">
+        <h1 id="sectionheader">CONTACT</h1>
+        <div id="email">
+        <h3 id="businessinquiries">Business Inquries:
+        <a href="mailto:nihar@mandapaty.com">nihar@mandapaty.com</a></h3>
+        </div>
+      </section>
 </div>
 
 
@@ -230,16 +235,40 @@ background-color: #000000;
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.tiltedpage-scroll.js"></script>
+
+
 <script>
 $(document).ready(function(){
     $(".main").tiltedpage_scroll({
           angle: 40
         });
       });
-      // Scroll to a certain element
-      document.querySelector('.hello').scrollIntoView({
-        behavior: 'smooth'
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
       });
+    } // End if
+  });
+});
 </script>
 
 </body>
